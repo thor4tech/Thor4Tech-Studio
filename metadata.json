@@ -1,0 +1,6 @@
+{
+  "name": "THOR4TECH STUDIO",
+  "description": "Internal video production platform for Thor4Tech. Manages Reels/Shorts/TikTok pipeline, client approvals, and Backblaze B2 video uploads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

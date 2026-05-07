@@ -1,0 +1,122 @@
+{
+  "entities": {
+    "client": {
+      "title": "Client",
+      "description": "Client information",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "slug": { "type": "string" },
+        "brand_color": { "type": "string" },
+        "instagram_handle": { "type": "string" },
+        "style_guide_url": { "type": "string" },
+        "total_videos_contracted": { "type": "number" },
+        "total_videos_delivered": { "type": "number" },
+        "status": { "type": "string" },
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" }
+      },
+      "required": ["id", "name", "slug", "status", "created_at", "updated_at"]
+    },
+    "video": {
+      "title": "Video",
+      "description": "Video project",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "client_id": { "type": "string" },
+        "client_slug": { "type": "string" },
+        "title": { "type": "string" },
+        "theme": { "type": "string" },
+        "briefing": { "type": "string" },
+        "duration_target_seconds": { "type": "number" },
+        "platform": { "type": "string" },
+        "status": { "type": "string" },
+        "raw_files": { "type": "array" },
+        "versions": { "type": "array" },
+        "final_key": { "type": "string" },
+        "references": { "type": "array" },
+        "editor_id": { "type": "string" },
+        "assigned_at": { "type": "string" },
+        "deadline": { "type": "string" },
+        "posted_at": { "type": "string" },
+        "posted_url": { "type": "string" },
+        "raw_auto_delete_at": { "type": "string" },
+        "raw_deleted": { "type": "boolean" },
+        "created_at": { "type": "string" },
+        "updated_at": { "type": "string" }
+      },
+      "required": ["id", "client_id", "title", "status", "created_at", "updated_at"]
+    },
+    "comment": {
+      "title": "Comment",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "video_id": { "type": "string" },
+        "version_n": { "type": "number" },
+        "timecode_seconds": { "type": "number" },
+        "author_id": { "type": "string" },
+        "author_name": { "type": "string" },
+        "text": { "type": "string" },
+        "resolved": { "type": "boolean" },
+        "resolved_at": { "type": "string" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["id", "video_id", "version_n", "author_id", "text", "created_at"]
+    },
+    "user": {
+      "title": "User",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "client_ids": { "type": "array" },
+        "capacity_videos_per_week": { "type": "number" },
+        "active": { "type": "boolean" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["id", "email", "name", "role", "active"]
+    },
+    "pipeline_log": {
+      "title": "Pipeline Log",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "video_id": { "type": "string" },
+        "from_status": { "type": "string" },
+        "to_status": { "type": "string" },
+        "user_id": { "type": "string" },
+        "user_name": { "type": "string" },
+        "note": { "type": "string" },
+        "created_at": { "type": "string" }
+      },
+      "required": ["id", "video_id", "from_status", "to_status", "user_id", "created_at"]
+    }
+  },
+  "firestore": {
+    "/clients/{clientId}": {
+      "schema": { "$ref": "#/entities/client" },
+      "description": "Clients"
+    },
+    "/videos/{videoId}": {
+      "schema": { "$ref": "#/entities/video" },
+      "description": "Videos"
+    },
+    "/comments/{commentId}": {
+      "schema": { "$ref": "#/entities/comment" },
+      "description": "Video Comments"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/user" },
+      "description": "Platform Users"
+    },
+    "/pipeline_logs/{logId}": {
+      "schema": { "$ref": "#/entities/pipeline_log" },
+      "description": "Pipeline logs for videos"
+    }
+  }
+}

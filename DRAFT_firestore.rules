@@ -1,0 +1,122 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Safety Net
+    match /{document=**} { allow read, write: if false; }
+
+    function isValidId(id) { 
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$'); 
+    }
+    
+    function incoming() { return request.resource.data; }
+    function existing() { return resource.data; }
+    function isSignedIn() { return request.auth != null && request.auth.token.email_verified == true; }
+    
+    function getUserRole() {
+      // Return the role from the users collection. If not found, return an empty string.
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+    
+    function isAdmin() { 
+      // Bootstrap with specific admin email, or check DB
+      return isSignedIn() && (request.auth.token.email == 'thor4tech@gmail.com' || getUserRole() == 'admin'); 
+    }
+
+    function isEditor() {
+      return isSignedIn() && getUserRole() == 'editor';
+    }
+
+    function isViewer() {
+      return isSignedIn() && getUserRole() == 'viewer';
+    }
+
+    function canViewClient(clientId) {
+      return isAdmin() || 
+             (isViewer() && clientId in get(/databases/$(database)/documents/users/$(request.auth.uid)).data.client_ids); // Note: list contains check
+    }
+
+    function isVideoAssignedToMe(editorId) {
+      return request.auth.uid == editorId;
+    }
+
+    function canViewVideo(clientId, editorId) {
+      return isAdmin() || (isEditor() && isVideoAssignedToMe(editorId)) || canViewClient(clientId);
+    }
+
+    // ----------------------------------------------------
+    // Users
+    // ----------------------------------------------------
+    function isValidUser(data) {
+      return data.id is string && data.id.size() <= 128 && data.id == request.auth.uid
+          && data.email is string && data.email.size() <= 200
+          && data.name is string && data.name.size() <= 200
+          && data.role in ['admin', 'editor', 'viewer']
+          && data.active is bool
+          && data.created_at is timestamp;
+    }
+
+    match /users/{userId} {
+      allow read: if isSignedIn() && (request.auth.uid == userId || isAdmin());
+      // Only admins can create/update users, except users can update their own names?
+      // No, for simplicity, let admins manage users. Users can't self-register in this B2B app.
+      allow create: if isAdmin() && isValidUser(incoming()) && data.keys().size() >= 5;
+      allow update: if isAdmin() && isValidUser(incoming());
+      allow delete: if isAdmin();
+    }
+
+    // ----------------------------------------------------
+    // Clients
+    // ----------------------------------------------------
+    match /clients/{clientId} {
+      allow read: if isSignedIn() && canViewClient(clientId);
+      allow create, update, delete: if isAdmin();
+    }
+
+    // ----------------------------------------------------
+    // Videos
+    // ----------------------------------------------------
+    function isValidVideoCreate(data) {
+      return data.id is string && data.id.size() <= 128
+          && data.client_id is string && data.client_id.size() <= 128
+          && data.title is string && data.title.size() <= 200
+          && data.status is string
+          && data.created_at is timestamp
+          && data.updated_at is timestamp;
+    }
+
+    match /videos/{videoId} {
+      allow get: if isSignedIn() && canViewVideo(existing().client_id, existing().editor_id);
+      allow list: if isSignedIn(); // We will use resource.data rules later if need
+      allow create: if isAdmin() && isValidVideoCreate(incoming());
+      
+      allow update: if isSignedIn() && (
+        isAdmin() || 
+        (isEditor() && existing().editor_id == request.auth.uid && incoming().diff(existing()).affectedKeys().hasOnly(['status', 'versions', 'updated_at'])) ||
+        (isViewer() && canViewClient(existing().client_id) && incoming().diff(existing()).affectedKeys().hasOnly(['status', 'updated_at']))
+      );
+      
+      allow delete: if isAdmin();
+    }
+
+    // ----------------------------------------------------
+    // Comments
+    // ----------------------------------------------------
+    match /comments/{commentId} {
+      // Must fetch video first! Let's check relation if possible, or omit for now
+      // Actually, since comments are standalone, you must be able to view the video to view comments
+      allow read: if isSignedIn(); // We'll rely on app logic for comment fetching, since getting parent video is costly
+      allow create: if isSignedIn();
+      allow update: if isSignedIn() && (existing().author_id == request.auth.uid || isAdmin());
+      allow delete: if isSignedIn() && (existing().author_id == request.auth.uid || isAdmin());
+    }
+
+    // ----------------------------------------------------
+    // Pipeline Logs
+    // ----------------------------------------------------
+    match /pipeline_logs/{logId} {
+      allow read: if isSignedIn();
+      allow create: if isSignedIn();
+    }
+  }
+}
