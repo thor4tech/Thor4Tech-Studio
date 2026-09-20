@@ -13,9 +13,9 @@ novo perfil é um diretório, não um fork.
 
 ```
 growth-agent/
-├── brain/                  # Conhecimento do método (universal, 45KB, 8 arquivos)
+├── brain/                  # Conhecimento do método (universal, ~57KB, 8 arquivos)
 │   ├── 00-INDEX.md              convenção de confiança [V]/[D]/[I]
-│   ├── 01-metodo-audience.md    as 7 etapas
+│   ├── 01-metodo-audience.md    viabilidade + as 7 etapas
 │   ├── 02-ganchos-e-headlines.md técnicas de gancho + critério de aceite
 │   ├── 03-roteiro-e-producao.md  frase-corrente, lote, escada de autonomia
 │   ├── 04-metricas-e-diagnostico.md KPIs-alvo + árvore de decisão
@@ -52,6 +52,24 @@ método descreve:
 O agente nunca inventa fato técnico — onde entraria conteúdo, ele emite um
 briefing. Num perfil de autoridade, um dado alucinado destrói o ativo que o
 perfil inteiro existe para construir.
+
+---
+
+## Teste de viabilidade — antes de qualquer coisa
+
+O método declara três ingredientes, e depende dos três:
+
+| # | Ingrediente | Critério |
+|---|---|---|
+| 1 | **Mercado com volume** | Nicho de ~2M de pessoas comporta 100–200k seguidores. Massa comporta 500k+. |
+| 2 | **Profissional bom** | Há densidade técnica real? Sem isso o conteúdo performa e não sustenta autoridade. |
+| 3 | **Método** | É esta brain. |
+| + | **Não desistir** | O contrato de 90 dias. |
+
+> "Se a gente tiver essas três coisas, é só se a pessoa não desistir antes."
+
+Calibrar a meta ao tamanho do mercado evita o erro mais caro do processo:
+diagnosticar fracasso de execução no vídeo 40 quando o problema era a meta.
 
 ---
 
@@ -144,15 +162,41 @@ Números declarados pela fonte, lidos ao vivo no painel do Instagram.
 
 ### A regra que mais gente erra
 
-> "Às vezes vai ter que postar 30 vídeos, 40 para entregar o primeiro. (...) é
-> porque o Instagram vai te testar."
+> "Até o dia 21 ela tinha ganho **400 seguidores**. (...) no dia 21 o primeiro
+> vídeo começou a furar a bolha e nos próximos 11 dias ela ganhou 100.000."
 
-No case, **o reels #21 foi o primeiro a entregar**. Consequência dura:
+**Antes do vídeo ~20, views não são sinal.** Nessa fase o único sinal confiável
+é a retenção interna — que não depende de quanto o algoritmo distribuiu.
+Diagnosticar "não funciona" no vídeo 12 por views baixas é o erro que o
+contrato de 90 dias existe para impedir.
 
-**Antes do vídeo ~20, views não são sinal.** Nessa fase, o único sinal
-confiável é a retenção interna — que não depende de quanto o algoritmo
-distribuiu. Diagnosticar "não funciona" no vídeo 12 por views baixas é o erro
-que o contrato de 90 dias existe para impedir.
+A curva é **exponencial, não linear**:
+
+| Marco | Reels | Seguidores | Por reels |
+|---|---|---|---|
+| Dia 21 | 21 | 400 | ~19 |
+| Dia 32 | ~30 | 100.000 | ~3.300 |
+| Dia 100 | 94 | 500.000 | ~5.300 |
+
+Abandonar na fase de teste não economiza esforço — destrói todo o retorno.
+
+### Furar a bolha vs. falar com a base
+
+Num perfil maduro, nem todo vídeo faz o mesmo trabalho. Medido no mesmo perfil:
+
+| Views | Seguidores | Conversão | Função |
+|---|---|---|---|
+| 2.600.000 | 32.000 | 1,23% | aquisição |
+| 129.000 | 297 | 0,23% | conexão com a base |
+
+Views abaixo da média **não são falha** — são conteúdo de retenção. Aplicar
+critério de aquisição a uma peça de base aposenta um gancho que estava fazendo
+o trabalho certo.
+
+> "Todo reels vai viralizar? Não. Porém, quando eu entendo o método (...) eu vou
+> acertar mais vezes."
+
+O método não promete acerto por peça. Promete **taxa de acerto**.
 
 ---
 

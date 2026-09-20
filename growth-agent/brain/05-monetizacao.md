@@ -125,3 +125,47 @@ a ser modelo. Produto escalável (digital, assíncrono, em grupo) deixa de ser
 
 Medir a fase 2 antes de criar produto é o atalho mais barato do método: a
 audiência **diz** o que quer comprar antes de existir oferta. **[D]**
+
+---
+
+## Antes do produto: vender ideias
+
+O que o perfil vende desde o primeiro dia não é produto. **[V]**
+
+> "A primeira coisa que a gente vende no processo de construção de audiência são
+> **ideias**. Você está vendendo a sua visão de mundo, você está vendendo a sua
+> linha de raciocínio, porque tem muitos médicos — se eu for falar sobre café da
+> manhã, alguns médicos talvez defendam, outros não. Cada um vai ter a sua visão
+> de mundo. Então no processo onde você vai colocar a sua voz na internet, você
+> vai defender a sua visão de mundo. Você vai estar vendendo o tempo todo."
+
+> "Ela vendeu, ela está vendendo ideias. (...) Muitas pessoas estão sendo
+> convencidas a mudar de vida, a mudar a alimentação, a mudar os hábitos." **[V]**
+
+**Conexão com o Núcleo de Influência:** os campos "defendemos" e "somos contra"
+(§ `01`, Etapa 1) não são enfeite editorial — são **o produto da fase 1**. Quem
+compra a ideia primeiro compra o produto depois, e a um preço que não precisa
+justificar. **[D]**
+
+### Marketing de atração **[V]**
+
+> "Esse é o famoso marketing de atração. É o marketing que você não corre atrás
+> dos clientes, você demonstra sua autoridade, seu conhecimento e usa estratégias
+> para essa mensagem chegar em quem precisa de você. E naturalmente a pessoa que
+> ver que você realmente entende do que está falando, ela vai querer o seu
+> serviço."
+
+É a formulação operacional da tese "quem tem audiência vende sem esforço": o
+esforço foi antecipado para a fase de conteúdo. **[D]**
+
+### Evidência acumulada da demanda reprimida **[V]**
+
+Com ~530k seguidores e **nenhuma** oferta publicada:
+
+- "Tem **milhares** de pedidos de consulta, sendo que ela nunca ofereceu a
+  consulta dela."
+- "Mulher, eu não sei o que você vai botar no seu link da bio, mas o que você
+  botar eu vou comprar."
+
+Esse é o estado que o método chama de demanda pronta — e a justificativa para
+não apressar a fase 1.

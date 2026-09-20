@@ -10,7 +10,10 @@ Procedência de tudo nesta brain. Auditável.
 |---|---|---|---|---|
 | `YT-WxjFSl9li9o` | "I Took My Doctor Wife from 0 to 100k Instagram Followers" — canal Elias Mamam | Transcrição automática pt-BR | **7.689 palavras** | **Fonte primária principal.** Método completo, etapa a etapa, com métricas lidas ao vivo |
 | `YT-7zQl02Mv9Cg` | "My Wife Is Losing A Lot Of Money On Instagram" | Transcrição automática pt-BR | 2.593 palavras | Camada de monetização: tripé e Efeito da Árvore |
+| `YT-Tc8QZSiUBsk` | "It's Terrifying What Happened to My Doctor Wife's Instagram" | Transcrição automática pt-BR | **4.502 palavras** | **Segunda fonte crítica.** Os 3 ingredientes, furar a bolha, coerência persona/tese, dados de 100 dias |
+| `YT-ni5cE46BMLM` | Vídeo do canal (tema saúde/comportamento) | Transcrição | 178 palavras | Marginal |
 | `YT-AeFKIhB-2CA` | Short do canal | Transcrição | 129 palavras | Marginal |
+| `IG-CuK91l7uyQk` | Post @elias.maman — "Método Atenção Digital" (Shark Tank / Camila Farani) | Legenda via metadados públicos | — | Confirma nomenclatura anterior do método |
 | `WEB-core-audience` | `page.eliasmaman.com.br/core-audience/` | Página oficial | — | Estrutura comercial e pilares da imersão |
 
 Arquivos brutos preservados em `../data/raw/`.
@@ -41,21 +44,31 @@ Arquivos brutos preservados em `../data/raw/`.
 - ✅ KPIs numéricos (pulados, retenção, interação) com alvos declarados
 - ✅ Curva de crescimento do case, vídeo a vídeo
 - ✅ Tripé de monetização e Efeito da Árvore
+- ✅ Os 3 ingredientes de viabilidade (mercado, profissional, método)
+- ✅ Furar a bolha vs. falar com a base, com conversão medida nos dois casos
+- ✅ Coerência entre persona de entrega e tese do conteúdo
+- ✅ Eficiência por reels ao longo de 100 dias
 
 ### Lacunas conhecidas
 
 | Lacuna | Causa | Impacto | Mitigação |
 |---|---|---|---|
 | **Conteúdo do Instagram (@elias.maman, ~1M)** | IG exige sessão autenticada: `302 → /accounts/login`, `429`, API `web_profile_info` descontinuada | Alto — é o canal principal dele | Fornecer cookie de sessão (ver README) |
-| **2 dos 5 vídeos do YouTube** | Bot gate do YouTube no IP do runner após ~6 requisições | Médio | Cookie do YouTube ou nova janela |
+| ~~2 dos 5 vídeos do YouTube~~ | ~~Bot gate~~ | — | ✅ **Resolvido** — os 5 vídeos do canal foram extraídos |
 | **Entrevistas e podcasts de terceiros** | Mesmo bot gate | Médio | Idem |
 | **Conteúdo pago (curso Método Audience)** | Não acessível publicamente | Baixo | O reality documenta o método aplicado — a fonte primária é suficiente para operar |
 
-**Avaliação honesta:** a lacuna do Instagram é real, mas o vídeo `WxjFSl9li9o` é
-uma fonte de qualidade incomum — é o criador aplicando o próprio método do zero,
-narrando cada decisão e lendo métricas na tela. Vale mais que centenas de posts.
-A brain está operacional. O Instagram enriqueceria a biblioteca de ganchos, não
-o método.
+**Avaliação honesta:** a lacuna do Instagram é real, mas os vídeos
+`WxjFSl9li9o` (7.689 palavras) e `Tc8QZSiUBsk` (4.502 palavras) são fontes de
+qualidade incomum — é o criador aplicando o próprio método do zero, narrando
+cada decisão e lendo as métricas na tela ao longo de 100 dias. Valem mais que
+centenas de posts. **A brain está operacional.** O Instagram enriqueceria a
+biblioteca de ganchos, não o método.
+
+**Nota de rota:** legendas de posts individuais do Instagram são acessíveis por
+metadados públicos (`instagram.com/p/<id>/`), mesmo com a página de perfil
+bloqueada. Com uma lista de IDs de posts, dá para montar biblioteca de ganchos
+sem cookie — mais lento, porém viável.
 
 ---
 

@@ -140,7 +140,7 @@ Para calibrar expectativa — não como promessa. **[V]**
 | Marco | Vídeos | Seguidores |
 |---|---|---|
 | Início (18/fev) | 0 | 0 |
-| Primeiro a entregar | 21 | ~1.000 |
+| Dia 21 (antes de furar a bolha) | 21 | **400** |
 | — | 26 | 40.000 |
 | — | 27 | 58.700 |
 | **Dia 32** | ~30 | **100.000** |
@@ -174,3 +174,61 @@ Por dia, registrar seguidores totais (o método usa Social Blade para isso **[V]
 
 O agente lê esse CSV antes de cada lote novo. Sem ele, o agente gera às cegas —
 e o ciclo de aprendizado que torna o sistema replicável não fecha.
+
+---
+
+## Furar a bolha vs. falar com a base
+
+Distinção que muda o diagnóstico depois que o perfil amadurece. Nem todo vídeo
+tem a mesma função. **[V]**
+
+> "Esse vídeo foi abaixo da média dela. Ele trouxe 297 seguidores. **Ele não
+> furou a bolha**, esse reels. Mas cara, são 129.000 pessoas que viram. Esse
+> vídeo está cumprindo um efeito legal, ele está conectado com a audiência dela."
+
+| Tipo | Views | Seguidores novos | Função |
+|---|---|---|---|
+| **Fura a bolha** | Muito acima da média | Muitos | **Aquisição** |
+| **Fala com a base** | Na média ou abaixo | Poucos | **Retenção e conexão** |
+
+### Dados medidos no mesmo perfil **[V]**
+
+| Views | Seguidores | Conversão | Leitura |
+|---|---|---|---|
+| 2.600.000 | 32.000 | 1,23% | furou a bolha |
+| 1.700.000 | 17.000 | 1,00% | furou a bolha (30% pulados) |
+| 129.000 | 297 | **0,23%** | falou com a base |
+
+A conversão cai ~5× quando o vídeo circula dentro da base. É **esperado**, não
+é falha: o seguidor já está lá, não há o que converter. **[D]**
+
+### Por que isso importa para o diagnóstico
+
+> "Nunca reclame de ter 100.000 views. (...) esses vídeos de 100.000 não trazem
+> tanto seguidor porque ela está falando com a base dela." **[V]**
+
+Num perfil maduro, **views abaixo da média não são sinal de falha** — são o
+comportamento normal de conteúdo de retenção. O erro é tratar todo vídeo como
+peça de aquisição e concluir que o método parou de funcionar.
+
+**Regra de proporção** (não declarada na fonte, inferida da distribuição
+observada): a maioria das peças fala com a base; uma minoria fura a bolha. O
+que sustenta o crescimento é **manter a cadência** para que as que furam
+apareçam. **[I]**
+
+> "Todo reels vai viralizar? Não. Porém, quando eu entendo o método, quando eu
+> entendo como empacotar o meu conteúdo de um jeito que as pessoas queiram
+> ouvir, **eu vou acertar mais vezes**." **[V]**
+
+O método não promete acerto por peça — promete **taxa de acerto**.
+
+### Impacto na árvore de diagnóstico
+
+Na fase de escala (40+ vídeos), antes de aplicar a árvore, classifique a peça:
+
+- Views ≥ ~2× a média → era peça de aquisição. Avalie por seguidores ganhos.
+- Views ≈ média → era peça de base. Avalie por retenção e interação, **não por
+  seguidores**.
+
+Aplicar critério de aquisição a uma peça de base gera falso negativo e leva a
+trocar um gancho que estava fazendo o trabalho certo. **[D]**

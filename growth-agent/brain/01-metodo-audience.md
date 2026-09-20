@@ -5,6 +5,62 @@ Liliana Limonge) e do material público da Core Educação.
 
 ---
 
+## Etapa −1 — Teste de viabilidade (os 3 ingredientes)
+
+Antes até do contrato existe um teste de viabilidade. O criador o enuncia
+diretamente: **[V]**
+
+> "O que que um projeto de audiência precisa para funcionar? Três coisas: (...)
+> precisa de um mercado bom (...) Segunda coisa, eu preciso que o profissional
+> seja bom (...) E a terceira coisa é um método."
+
+> "Se a gente tiver essas três coisas, é só se a pessoa não desistir antes. (...)
+> Porque se a pessoa é boa no que ela faz, se tem um mercado e tem um método, é
+> só postar." **[V]**
+
+| # | Ingrediente | Critério de aprovação |
+|---|---|---|
+| 1 | **Mercado com volume** | Existe gente suficiente para falar? |
+| 2 | **Profissional bom** | Há densidade técnica real por trás? |
+| 3 | **Método** | Existe processo repetível? (é o que esta brain entrega) |
+| + | **Não desistir** | Etapa 0 — o contrato |
+
+### Sobre o ingrediente 1 — volume de mercado **[V]**
+
+> "Será que a Lili teria 500.000 seguidores se ela ajudasse advogados
+> tributaristas a vender para banco? Não teria, porque é muito mais nichado.
+> Como ela fala para a massa, ela vai ter o potencial de alcance para massa."
+
+Mas nicho não é veto — é **teto**:
+
+> "Vamos supor que você é um professor de tênis. O tênis não é um esporte de
+> multidão, mas é um esporte que você pode ter sim seus 100.000, 200.000, até
+> mais seguidores. (...) tem 2 milhões de pessoas no Brasil que jogam tênis.
+> Agora, quantas mulheres estão precisando emagrecer, que estão na menopausa?"
+
+**Uso operacional:** estime o mercado endereçável **antes** de prometer meta.
+Um nicho de 2 milhões de pessoas comporta 100–200k seguidores; um mercado de
+massa comporta 500k+. Prometer 500k num nicho de 50 mil pessoas é erro de
+diagnóstico, não de execução. **[D]**
+
+### Sobre o ingrediente 2 — por que o especialista não pode terceirizar **[V]**
+
+> "Não fui eu que escrevi os roteiros inteiros, eu escrevi a headline, só que o
+> conteúdo é dela. (...) eu sou copywriter há 16 anos, eu sei escrever um
+> roteiro. Mas será que daria a mesma coisa? Não daria, porque é diferente
+> quando a pessoa tem o conhecimento. (...) Imagina se eu fosse escrever roteiro
+> para um advogado que fala de tributação no Brasil. Eu poderia fazer roteiros
+> virais, mas eu não manjo das leis igual o advogado."
+
+> "Não dá para você esperar 'vou receber um negócio pronto aqui, eu só vou ler
+> o teleprompter e acabou'. Você tem que se envolver com o processo." **[V]**
+
+**Esta é a justificativa técnica do desenho do agente.** Quem escreve headline
+viral sem domínio do tema produz peça que performa e não sustenta autoridade.
+O agente ocupa exatamente o papel do copywriter — e para no mesmo lugar. **[D]**
+
+---
+
 ## Etapa 0 — Contrato de compromisso (filtro de entrada)
 
 Antes de qualquer trabalho técnico, existe um filtro de disciplina. **[V]**
@@ -242,3 +298,30 @@ método. **[D]**
                  ├─ retenção ruim            → trocar gancho
                  └─ entregou                 → ESCALA: clona a estrutura
 ```
+
+---
+
+## Coerência entre persona e tese
+
+Descoberta do case que contraria a prática dominante. **[V]**
+
+> "A gente trouxe bastante a personalidade da Lili, o jeito calmo dela falar,
+> indo na contramão do que se prega hoje na internet (...) que você precisa
+> falar rápido, precisa acelerar o vídeo. A gente foi na contramão disso.
+> (...) **Isso foi intencional** porque é uma característica dela, inclusive
+> está dentro do método dela de saúde, porque ela fala que uma das coisas que
+> prejudicam a saúde de uma mulher é o excesso de adrenalina, dessa agitação.
+> Ela quer trazer as mulheres de novo para esse lugar de paz. Então é uma coisa
+> que encaixa com a narrativa, com o movimento que a gente está construindo."
+
+**O princípio:** a forma de entrega precisa ser coerente com a tese do
+conteúdo. Uma médica que prega calma não pode falar acelerado — a contradição
+entre forma e mensagem destrói a credibilidade antes do argumento. **[D]**
+
+Isso qualifica as regras de ritmo de `02`: os anti-padrões (lentidão, rodeio)
+são sobre **roteiro frouxo**, não sobre velocidade de fala. Um roteiro apertado
+entregue com voz calma passa; um roteiro frouxo entregue rápido não. **[I]**
+
+**Ação do agente:** ao gerar roteiro, respeitar o registro do especialista
+declarado em `perfil.json`. Não forçar o padrão "urgente e acelerado" quando a
+tese do perfil pede o oposto.

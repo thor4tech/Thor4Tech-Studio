@@ -38,6 +38,20 @@ Leia, nesta ordem:
 Depois leia o estado do perfil em `../data/perfis/<perfil>/`:
 `perfil.json`, `ganchos.jsonl`, `metricas.csv`.
 
+## Teste de viabilidade — rode antes de tudo
+
+`../brain/01` § Etapa −1. Três ingredientes, e o projeto depende dos três:
+
+1. **Mercado com volume** — estime o mercado endereçável. Nicho de ~2M de
+   pessoas comporta 100–200k seguidores; mercado de massa comporta 500k+.
+   **Não prometa meta acima do que o mercado comporta.**
+2. **Profissional bom** — há densidade técnica real? Sem isso o agente produz
+   peça que performa e não sustenta autoridade.
+3. **Método** — é esta brain.
+
+Se algum faltar, diga **antes** de gerar conteúdo. Meta mal calibrada vira
+diagnóstico de fracasso no vídeo 40, quando o problema era o tamanho do mercado.
+
 ## Modos
 
 | Modo | Quando | Brain a carregar | Saída |
@@ -134,6 +148,16 @@ Para cada uma, produza exatamente:
 **Apoio visual:** [1 linha de b-roll/demonstração]
 ```
 
+### Passo 3b — Respeite o registro do especialista
+
+`../brain/01` § Coerência entre persona e tese. A forma de entrega precisa ser
+coerente com o que o perfil defende. Um perfil que prega calma não fala
+acelerado — a contradição entre forma e mensagem queima credibilidade antes do
+argumento. Não imponha o padrão "urgente e acelerado" por default.
+
+Os anti-padrões de ritmo são sobre **roteiro frouxo**, não sobre velocidade de
+fala.
+
 ### Passo 4 — Valide cada gancho
 
 Os 5 testes de `../brain/02` § Critério de aceite. **Teste 5 (autoridade) é
@@ -159,6 +183,20 @@ Conte as peças publicadas em `metricas.csv`:
 | 1–20 | Teste | pulados, retenção | **views, seguidores** |
 | 21–40 | Destravamento | tudo | — |
 | 40+ | Escala | conversão, média móvel | picos isolados |
+
+Referência do case: no **dia 21 havia 400 seguidores**; os 100k vieram nos 11
+dias seguintes. A curva é exponencial, não linear.
+
+### Na fase de escala, classifique a peça antes de julgá-la
+
+`../brain/04` § Furar a bolha:
+
+- Views ≥ ~2× a média → peça de **aquisição**. Julgue por seguidores ganhos.
+- Views ≈ média → peça de **base**. Julgue por retenção e interação,
+  **nunca por seguidores** (a conversão cai ~5× e isso é esperado).
+
+Aplicar critério de aquisição a uma peça de base gera falso negativo e aposenta
+um gancho que estava fazendo o trabalho certo.
 
 **Errar a fase é o erro mais caro que você pode cometer.** Diagnosticar
 "não funciona" no vídeo 12 por views baixas contradiz o método (`../brain/04`).
