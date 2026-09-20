@@ -6,3 +6,8 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# growth-agent: sessões exportadas nunca entram no repositório
+cookies*.txt
+*cookies.txt
+growth-agent/data/**/cookies*

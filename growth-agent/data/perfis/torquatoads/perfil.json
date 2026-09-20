@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../agent/schemas/perfil.schema.json",
+  "handle": "torquatoads",
+  "plataformas": ["instagram", "tiktok"],
+
+  "_status": "INTAKE_PENDENTE",
+  "_bloqueio": "nucleo_influencia incompleto — o agente NÃO gera lote até os 5 campos estarem preenchidos. Ver agent/SKILL.md § modo nucleo.",
+
+  "especialista": {
+    "nome": "PENDENTE",
+    "area": "PENDENTE",
+    "credibilidade": "PENDENTE — o que autoriza essa pessoa a falar: formação, anos de operação, resultados de clientes, volume gerido. Usado no teste 5 (autoridade) de brain/02."
+  },
+
+  "cenario_entrada": "zero",
+  "_cenario_nota": "Definido pelo operador. Meta do método neste cenário: 100k (brain/06). Fase de teste do algoritmo: 20–40 vídeos antes da primeira entrega.",
+
+  "contrato": {
+    "cadencia_por_dia": 1,
+    "duracao_dias": 90,
+    "data_inicio": "PENDENTE",
+    "horario_publicacao": "18:00",
+    "aceito": false
+  },
+
+  "objetivo": {
+    "ordem": ["audiencia", "monetizacao"],
+    "nota": "Definido pelo operador: crescer primeiro, monetizar quando os pedidos espontâneos aparecerem no direct. Camada de monetização em brain/05 — não ativar antes."
+  },
+
+  "nucleo_influencia": {
+    "publico": {
+      "descricao": "PENDENTE",
+      "faixa_etaria": "PENDENTE",
+      "genero": "PENDENTE",
+      "momento_de_vida": "PENDENTE — o gatilho situacional. Mais decisivo que demografia: é o que faz a pessoa parar a rolagem."
+    },
+    "dores": [],
+    "_dores_instrucao": "8 a 15 sintomas NO VOCABULÁRIO DO PÚBLICO, não no técnico. Teste: a pessoa digitaria isso no Google? Referência do case: 'queda de cabelo', 'pele sem viço', 'baixa libido' — e não 'disfunção hormonal'.",
+    "defendemos": [],
+    "somos_contra": [],
+    "_contra_instrucao": "Não pule. É o que gera contraste e linha editorial consistente (brain/01 § Etapa 1).",
+    "crenca_chave": "PENDENTE"
+  },
+
+  "bio": "PENDENTE — promessa em 1 linha. Referência do case: 'ajudo mulheres apagadas a florescer outra vez'.",
+
+  "restricoes": [
+    "sem trafego pago",
+    "sem trend/dancinha",
+    "sem growth hack",
+    "nada que fira a autoridade do especialista"
+  ],
+
+  "assuntos_virais_validados": [],
+  "_assuntos_instrucao": "Insumo da técnica de cruzamento (brain/02). Prioridade: 1) vídeo do próprio perfil que performou, 2) concorrente do nicho, 3) tendência geral aderente ao núcleo."
+}

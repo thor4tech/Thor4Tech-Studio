@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thor4tech.studio/growth-agent/gancho.schema.json",
+  "title": "Gancho — uma linha de ganchos.jsonl",
+  "type": "object",
+  "required": ["id", "gancho", "template", "status"],
+  "properties": {
+    "id": { "type": "string", "description": "lote-NN-PP" },
+    "gancho": { "type": "string", "maxLength": 140 },
+    "template": {
+      "enum": ["cruzamento-viral", "ja-esta-entre-nos", "escala", "aposta"]
+    },
+    "assunto_a": { "type": "string" },
+    "assunto_b": { "type": "string" },
+    "escala_de": { "type": "string", "description": "id do gancho vencedor que este clona" },
+    "validacao": {
+      "type": "object",
+      "description": "Os 5 testes de brain/02. t5 é veto absoluto.",
+      "properties": {
+        "t1_tres_segundos": { "type": "boolean" },
+        "t2_espelho": { "type": "boolean" },
+        "t3_pergunta_aberta": { "type": "boolean" },
+        "t4_frase_corrente": { "type": "boolean" },
+        "t5_autoridade": { "type": "boolean" }
+      }
+    },
+    "status": { "enum": ["planejado", "publicado", "escalar", "aposentar"] },
+    "publicado_em": { "type": "string", "format": "date" },
+    "metricas": {
+      "type": "object",
+      "properties": {
+        "views": { "type": "number" },
+        "pulados_pct": { "type": "number" },
+        "retencao_pct": { "type": "number" },
+        "interacao_pct": { "type": "number" },
+        "seguidores_ganhos": { "type": "number" }
+      }
+    }
+  }
+}

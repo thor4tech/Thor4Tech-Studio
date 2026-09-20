@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thor4tech.studio/growth-agent/perfil.schema.json",
+  "title": "Perfil — estado do Método Audience",
+  "type": "object",
+  "required": ["handle", "especialista", "contrato", "nucleo_influencia"],
+  "properties": {
+    "handle": { "type": "string", "description": "@ sem arroba" },
+    "plataformas": {
+      "type": "array",
+      "items": { "enum": ["instagram", "tiktok", "youtube"] },
+      "default": ["instagram", "tiktok"]
+    },
+    "especialista": {
+      "type": "object",
+      "required": ["nome", "area", "credibilidade"],
+      "properties": {
+        "nome": { "type": "string" },
+        "area": { "type": "string", "description": "Especialidade técnica real" },
+        "credibilidade": {
+          "type": "string",
+          "description": "O que o autoriza a falar. Usado no teste de autoridade."
+        }
+      }
+    },
+    "cenario_entrada": {
+      "enum": ["zero", "travado"],
+      "description": "zero = perfil novo (meta 100k) | travado = tem base, não entrega (meta +500k). Ver brain/06."
+    },
+    "contrato": {
+      "type": "object",
+      "required": ["cadencia_por_dia", "duracao_dias", "data_inicio"],
+      "properties": {
+        "cadencia_por_dia": { "type": "number", "default": 1 },
+        "duracao_dias": { "type": "number", "default": 90 },
+        "data_inicio": { "type": "string", "format": "date" },
+        "horario_publicacao": { "type": "string", "default": "18:00" },
+        "aceito": { "type": "boolean" }
+      }
+    },
+    "nucleo_influencia": {
+      "type": "object",
+      "description": "Os 5 campos. Ver brain/01 § Etapa 1.",
+      "required": ["publico", "dores", "defendemos", "somos_contra", "crenca_chave"],
+      "properties": {
+        "publico": {
+          "type": "object",
+          "required": ["descricao"],
+          "properties": {
+            "descricao": { "type": "string" },
+            "faixa_etaria": { "type": "string" },
+            "genero": { "type": "string" },
+            "momento_de_vida": {
+              "type": "string",
+              "description": "O gatilho situacional. Mais importante que demografia."
+            }
+          }
+        },
+        "dores": {
+          "type": "array",
+          "minItems": 8,
+          "description": "8–15 sintomas NO VOCABULÁRIO DO PÚBLICO, não no técnico.",
+          "items": {
+            "type": "object",
+            "required": ["sintoma"],
+            "properties": {
+              "sintoma": { "type": "string" },
+              "termo_tecnico": { "type": "string" },
+              "potencial_viral": { "enum": ["alto", "medio", "baixo", "nao_testado"] }
+            }
+          }
+        },
+        "defendemos": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+        "somos_contra": { "type": "array", "minItems": 3, "items": { "type": "string" } },
+        "crenca_chave": { "type": "string" }
+      }
+    },
+    "bio": { "type": "string", "description": "Promessa em 1 linha. Ex.: 'ajudo mulheres apagadas a florescer outra vez'" },
+    "restricoes": {
+      "type": "array",
+      "description": "Limites do método + limites próprios do perfil.",
+      "default": [
+        "sem trafego pago",
+        "sem trend/dancinha",
+        "sem growth hack",
+        "nada que fira a autoridade do especialista"
+      ],
+      "items": { "type": "string" }
+    },
+    "assuntos_virais_validados": {
+      "type": "array",
+      "description": "Insumo da técnica de cruzamento. Ver brain/02.",
+      "items": {
+        "type": "object",
+        "required": ["assunto", "evidencia"],
+        "properties": {
+          "assunto": { "type": "string" },
+          "evidencia": { "enum": ["proprio_perfil", "concorrente", "tendencia_geral"] },
+          "metrica": { "type": "string" }
+        }
+      }
+    }
+  }
+}
