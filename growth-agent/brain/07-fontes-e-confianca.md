@@ -15,6 +15,7 @@ Procedência de tudo nesta brain. Auditável.
 | `YT-AeFKIhB-2CA` | Short do canal | Transcrição | 129 palavras | Marginal |
 | `IG-CuK91l7uyQk` | Post @elias.maman — "Método Atenção Digital" (Shark Tank / Camila Farani) | Legenda via metadados públicos | — | Confirma nomenclatura anterior do método |
 | `WEB-core-audience` | `page.eliasmaman.com.br/core-audience/` | Página oficial | — | Estrutura comercial e pilares da imersão |
+| `WEB-curriculo` | `cursosdigital10.com.br/cursos/metodo-audience/` | Currículo publicado do curso | 8 módulos + 4 bônus | **Valida a brain contra a estrutura oficial.** Ver mapa de cobertura em `00-INDEX.md` |
 
 Arquivos brutos preservados em `../data/raw/`.
 
@@ -56,7 +57,7 @@ Arquivos brutos preservados em `../data/raw/`.
 | **Conteúdo do Instagram (@elias.maman, ~1M)** | IG exige sessão autenticada: `302 → /accounts/login`, `429`, API `web_profile_info` descontinuada | Alto — é o canal principal dele | Fornecer cookie de sessão (ver README) |
 | ~~2 dos 5 vídeos do YouTube~~ | ~~Bot gate~~ | — | ✅ **Resolvido** — os 5 vídeos do canal foram extraídos |
 | **Entrevistas e podcasts de terceiros** | Mesmo bot gate | Médio | Idem |
-| **Conteúdo pago (curso Método Audience)** | Não acessível publicamente | Baixo | O reality documenta o método aplicado — a fonte primária é suficiente para operar |
+| **4 listas enumeradas do curso** (7 gatilhos, 30 formatos de headline, 8 elementos, 7 formatos de roteiro) | Conteúdo pago — R$ 79,90 | Médio | Comprar e transcrever. A brain cobre a mecânica dessas categorias; não as listas. Ver mapa de cobertura em `00-INDEX.md` |
 
 **Avaliação honesta:** a lacuna do Instagram é real, mas os vídeos
 `WxjFSl9li9o` (7.689 palavras) e `Tc8QZSiUBsk` (4.502 palavras) são fontes de

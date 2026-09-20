@@ -258,6 +258,23 @@ brain.
 
 ---
 
+## Cobertura contra o currículo oficial
+
+O curso Método Audience (R$ 79,90) publica sua estrutura. A brain cobre
+**4 dos 8 módulos integralmente** e os outros 4 parcialmente — nesses, tem a
+mecânica mas não as listas enumeradas (7 gatilhos, 30 formatos de headline,
+8 elementos, 7 formatos de roteiro), que são o produto pago.
+
+Em compensação, a brain tem o que o curso não dá: os números reais lidos no
+painel ao longo de 100 dias, a árvore de diagnóstico e a integração num agente
+replicável.
+
+Mapa completo em `brain/00-INDEX.md`. **Melhor ROI disponível:** comprar o curso
+e transcrever as quatro listas — ~4h de trabalho que levam a biblioteca de
+ganchos de 2 formatos validados para 30.
+
+---
+
 ## Limites declarados
 
 1. **Números não auditados** — todos autodeclarados pela fonte.

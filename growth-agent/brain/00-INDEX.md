@@ -48,3 +48,45 @@ conhecimento que já existe num formato que sobrevive aos 3 primeiros segundos.
 **Essa frase é a especificação do agente.** A divisão de trabalho que ele
 automatiza: o agente entrega gancho + headline + estrutura; o especialista
 entrega densidade técnica. Nenhum dos dois faz o trabalho do outro.
+
+---
+
+## Mapa de cobertura contra o currículo oficial
+
+O curso Método Audience (R$ 79,90, `cursosdigital10.com.br/cursos/metodo-audience/`)
+publica sua estrutura de módulos. Comparar a brain contra ela mostra o que a
+engenharia reversa alcançou e o que não alcançou. **[V]** para os nomes dos
+módulos.
+
+| # | Módulo oficial | Cobertura da brain | Onde |
+|---|---|---|---|
+| 1 | O Plano para Crescer no Instagram — "o plano completo dos próximos 90 dias" | ✅ **Completa** | `01` etapas 0–6 |
+| 2 | Como Funciona o Algoritmo — "as **três métricas** que o algoritmo analisa" | ✅ **Completa** | `04` — pulados, retenção, interação, com alvos numéricos |
+| 3 | Encontrando Assuntos Virais | ✅ **Completa** | `02` técnica 1 + hierarquia de validação |
+| 4 | Dominando a Ciência da Atenção — "os **7 gatilhos** dos 3 primeiros segundos" | ⚠️ **Parcial** | `02` traz a mecânica e 3 gatilhos identificados; a lista dos 7 é conteúdo pago |
+| 5 | Criando Headlines — "**30 formatos** validados" | ⚠️ **Parcial** | `02` traz 2 formatos validados com métrica; os 30 são conteúdo pago |
+| 6 | Conteúdos Notáveis — "os **8 elementos** que fazem compartilhar, salvar, comentar" | ⚠️ **Parcial** | `02`/`03` cobrem CTA de salvamento e stakes; a lista dos 8 é conteúdo pago |
+| 7 | Construindo Seu Núcleo de Influência | ✅ **Completa** | `01` etapa 1, com os 5 campos verbatim |
+| 8 | Roteiro Magnético — "os **7 formatos** de roteiro" | ⚠️ **Parcial** | `03` traz a regra da frase-corrente e o molde de 3 blocos; os 7 formatos são conteúdo pago |
+
+Bônus do curso — Destrave Sua Oratória, Como Montar um Cenário, Grave como um
+Profissional, Edição Magnética — são de produção audiovisual. `03` cobre os
+princípios e a ordem de prioridade de investimento. **[V]**
+
+### Leitura honesta
+
+**O que a brain tem e o curso não dá:** os números reais lidos no painel ao
+longo de 100 dias, a árvore de diagnóstico que devolve ação, a distinção entre
+furar a bolha e falar com a base, e a integração disso tudo num agente
+executável e replicável.
+
+**O que falta:** quatro listas enumeradas (7 gatilhos, 30 formatos de headline,
+8 elementos, 7 formatos de roteiro). A brain reconstrói a **mecânica** dessas
+categorias a partir do método aplicado no case, mas não as listas em si — e
+não tentou reconstruí-las, porque são o produto pago.
+
+**Recomendação:** a R$ 79,90, comprar o curso e transcrever as quatro listas
+para `02` e `03` é o melhor ROI disponível para esta brain. São ~4 horas de
+trabalho que elevam a biblioteca de ganchos de 2 formatos validados para 30.
+Até lá, o agente opera com a mecânica — que é o que gera formatos novos, não
+apenas reaplica os existentes.
